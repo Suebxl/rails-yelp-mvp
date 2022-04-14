@@ -1,1 +1,29 @@
 @import "bootstrap/scss/bootstrap";
+
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap"; // from the node_modules
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(25, 74, 74);
+}
+.margin-20 {
+  margin: 20px;
+}

@@ -11,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+  <nav class="navbar navbar-light bg-info">
+  <%= link_to "See all restaurants", restaurants_path, class: "margin-20 btn btn-light"%>
+  <%= link_to "Suggest a restaurant", new_restaurant_path, class: "margin-20 btn btn-light"%>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <%= yield %>
+    </div>
+  </div>
+
+
   </body>
 </html>
